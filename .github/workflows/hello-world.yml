@@ -2,12 +2,10 @@ name: hello-world
 
 
 on: push
-
-  jobs:
+jobs:
     hello-world-job:
       runs-on: ubuntu-latest
-
-        steps: 
+      steps: 
           - name: checkout repository 
             uses: actions/checkout@v4
           - run: echo "hellooooooooo world" 
